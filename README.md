@@ -1,6 +1,6 @@
 # Kotlin Multiplatform Example
 
-App exemplo de Kotlin Multiplataforma.
+App exemplo de Kotlin Multiplataforma, com suporte no Android para as interfaces java.io.Serializable e android.os.Parcelable.
 
 ## Ambiente de desenvolvimento para Android
 
@@ -16,7 +16,7 @@ Link para download (Android Studio Canary):
 
 ## Ambiente de desenvolvimento para iOS
 
-Gradle e JDK, para gerar o `.framework` para o XCode. É necessário ter o Android SDK instalado.
+XCode 10, Gradle 5.3, JDK 8 e Android SDK instalados, para gerar o `.framework` para o XCode e para desenvolver o app iOS.
 
 ## Como funciona
 
