@@ -1,4 +1,4 @@
-# Kotlin Multiplatform Project
+# Kotlin Multiplatform Example
 
 App exemplo de Kotlin Multiplataforma.
 
