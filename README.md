@@ -36,5 +36,7 @@ Etapas:
 ## Mais informações
 
 Mais informações em: https://kotlinlang.org/docs/tutorials/native/mpp-ios-android.html
+
 O suporte a Serializable e Parcelable foi baseado no artigo: https://aakira.app/blog/2019/04/kotlin-mpp-android-parcelable-en/
+
 Ver também o projeto: https://github.com/AAkira/KotlinMultiplatformAndoridParcelize
