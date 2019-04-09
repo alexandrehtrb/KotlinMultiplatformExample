@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets.each {
+        def root = "src/androidMain/${it.name}"
+        it.setRoot(root)
+        it.java.srcDirs += "${root}/kotlin"
+        it.manifest.srcFile "src/androidMain/AndroidManifest.xml"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}

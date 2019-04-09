@@ -1,0 +1,70 @@
+apply plugin: 'kotlin-multiplatform'
+apply from: 'android-kotlin-shared.gradle'
+
+kotlin {
+    targets {
+        final def iOSTarget = System.getenv('SDK_NAME')?.startsWith("iphoneos") \
+                              ? presets.iosArm64 : presets.iosX64
+
+        fromPreset(iOSTarget, 'iOS') {
+            compilations.main.outputKinds('FRAMEWORK')
+        }
+
+        fromPreset(presets.android, 'android')
+    }
+
+    sourceSets {
+        commonMain {
+            dependencies {
+                api "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
+            }
+        }
+
+        commonTest {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version"
+                implementation "org.jetbrains.kotlin:kotlin-test-annotations-common:$kotlin_version"
+            }
+        }
+
+        androidMain {
+            dependencies {
+                api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+                api "org.jetbrains.kotlin:kotlin-android-extensions-runtime:$kotlin_version"
+            }
+        }
+
+        androidTest {
+            dependencies {
+                implementation "org.mockito:mockito-core:$rootProject.mockitoVersion"
+                implementation "junit:junit:$rootProject.jUnitVersion"
+            }
+        }
+
+    }
+}
+
+// workaround for https://youtrack.jetbrains.com/issue/KT-27170
+configurations {
+    compileClasspath
+}
+
+task packForXCode(type: Sync) {
+    final File frameworkDir = new File(buildDir, "xcode-frameworks")
+    final String mode = project.findProperty("XCODE_CONFIGURATION")?.toUpperCase() ?: 'DEBUG'
+
+    inputs.property "mode", mode
+    dependsOn kotlin.targets.iOS.compilations.main.linkTaskName("FRAMEWORK", mode)
+
+    from { kotlin.targets.iOS.compilations.main.getBinary("FRAMEWORK", mode).parentFile }
+    into frameworkDir
+
+    doLast {
+        new File(frameworkDir, 'gradlew').with {
+            text = "#!/bin/bash\nexport 'JAVA_HOME=${System.getProperty("java.home")}'\ncd '${rootProject.rootDir}'\n./gradlew \$@\n"
+            setExecutable(true)
+        }
+    }
+}
+
+tasks.build.dependsOn packForXCode
