@@ -2,6 +2,8 @@
 
 App exemplo de Kotlin Multiplataforma, com suporte no Android para as interfaces java.io.Serializable e android.os.Parcelable.
 
+[Read in english](https://github.com/alexandrehtrb/KotlinMultiplatformExample/blob/master/README.en.md)
+
 ## Ambiente de desenvolvimento para Android
 
 Android Studio 3.3 ou superior
