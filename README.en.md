@@ -26,11 +26,11 @@ The project has a KotlinSharedLibrary module, in Kotlin Multiplatform, that is s
 
 The Android app imports the KotlinSharedLibrary as a module.
 
-For the iOS app, it is different: the project import the `.framework` file generated from KotlinSharedLibrary by a Gradle task.
+For the iOS app, it is different: the project imports the `.framework` file generated from KotlinSharedLibrary by a Gradle task.
 
 Steps:
 
-* Execute the **packForXCode** of KotlinSharedLibrary's build.gradle. Should be run in a Mac computer.
+* Execute the **packForXCode** of KotlinSharedLibrary's build.gradle. Should be ran in a Mac computer.
 * The task will create the `.framework` file in the folder: `/KotlinSharedLibrary/build/xcode-frameworks`.
 * This framework needs to be imported by the iOS project.
 * The iOS project needs to disable BitCode (in XCode, Build Settings > All > Enable Bitcode = No).
