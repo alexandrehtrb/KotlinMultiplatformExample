@@ -10,11 +10,11 @@ Android Studio 3.3 ou superior
 
 Link para download (Android Studio Canary):
 
-**Windows**: https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-windows.zip
+[Windows](https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-windows.zip)
 
-**Linux**: https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-linux.zip
+[Linux](https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-linux.zip)
 
-**Mac OS**: https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-mac.zip
+[Mac OS](https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-mac.zip)
 
 ## Ambiente de desenvolvimento para iOS
 
