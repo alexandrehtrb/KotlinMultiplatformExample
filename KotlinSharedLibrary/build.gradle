@@ -1,7 +1,8 @@
 apply plugin: 'kotlin-multiplatform'
 apply from: 'android-kotlin-shared.gradle'
+apply from: 'jacoco.gradle'
 
-final def MODULE_NAME = "mvvmshared" // Nome do módulo
+final def MODULE_NAME = "KotlinSharedLibrary" // Nome do módulo
 
 kotlin {
     targets {
