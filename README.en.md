@@ -35,6 +35,10 @@ Steps:
 * This framework needs to be imported by the iOS project.
 * The iOS project needs to disable BitCode (in XCode, Build Settings > All > Enable Bitcode = No).
 
+## JaCoCo reports
+
+To obtain the code test coverage report, execute the Gradle task **:KotlinSharedLibrary:jacocoTestReportDebug**. The report should be generated in the folder `KotlinSharedLibrary\build\reports\jacoco\debug`.
+
 ## More information
 
 More information in: https://kotlinlang.org/docs/tutorials/native/mpp-ios-android.html
