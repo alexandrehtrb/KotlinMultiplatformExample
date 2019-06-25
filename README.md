@@ -37,7 +37,9 @@ Etapas:
 
 ## Relatórios do JaCoCo
 
-Para obter o relatório de cobertura de código por testes, execute a task do Gradle **:KotlinSharedLibrary:jacocoTestReportDebug**. O relatório deverá ser gerado na pasta `KotlinSharedLibrary\build\reports\jacoco\debug`.
+Para obter o relatório de cobertura de código por testes, execute a task do Gradle **:KotlinSharedLibrary:jacocoTestReportDebug**.
+
+O relatório deverá ser gerado na pasta `KotlinSharedLibrary\build\reports\jacoco\debug`.
 
 ## Mais informações
 

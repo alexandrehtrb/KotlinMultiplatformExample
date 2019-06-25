@@ -37,7 +37,9 @@ Steps:
 
 ## JaCoCo reports
 
-To obtain the code test coverage report, execute the Gradle task **:KotlinSharedLibrary:jacocoTestReportDebug**. The report should be generated in the folder `KotlinSharedLibrary\build\reports\jacoco\debug`.
+To obtain the code test coverage report, execute the Gradle task **:KotlinSharedLibrary:jacocoTestReportDebug**. 
+
+The report should be generated in the folder `KotlinSharedLibrary\build\reports\jacoco\debug`.
 
 ## More information
 
