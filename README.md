@@ -18,7 +18,7 @@ Link para download (Android Studio Canary):
 
 ## Ambiente de desenvolvimento para iOS
 
-XCode 10, Gradle 5.3, JDK 8 e Android SDK instalados, para gerar o `.framework` para o XCode e para desenvolver o app iOS.
+XCode 10, Gradle 5.4.1, JDK 8 e Android SDK instalados, para gerar o `.framework` para o XCode e para desenvolver o app iOS.
 
 ## Como funciona
 

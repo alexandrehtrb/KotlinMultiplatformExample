@@ -18,7 +18,7 @@ Download links for Android Studio Canary:
 
 ## Tools required for iOS
 
-XCode 10, Gradle 5.3, JDK 8 and Android SDK installed, to generate the `.framework` for XCode and to develop the iOS app.
+XCode 10, Gradle 5.4.1, JDK 8 and Android SDK installed, to generate the `.framework` for XCode and to develop the iOS app.
 
 ## How it works
 
