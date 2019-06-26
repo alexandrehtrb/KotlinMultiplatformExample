@@ -22,18 +22,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+    flavorDimensions "flavor"
+    productFlavors {
+        development{}
+        homolog{}
+        production{}
+    }
     sourceSets.each {
         def root = "src/androidMain/${it.name}"
         it.setRoot(root)
         it.java.srcDirs += "${root}/kotlin"
         it.manifest.srcFile "src/androidMain/AndroidManifest.xml"
     }
-
     lintOptions {
         abortOnError false
     }
-
     androidExtensions {
         experimental = true
     }

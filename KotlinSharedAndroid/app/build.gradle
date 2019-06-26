@@ -37,10 +37,6 @@ android {
             applicationIdSuffix ".homolog"
             resValue 'string', 'app_name', 'KotlinSharedAndroid-Homolog'
         }
-        mock {
-            applicationIdSuffix ".mock"
-            resValue 'string', 'app_name', 'KotlinSharedAndroid-Mock'
-        }
         production {
             resValue 'string', 'app_name', 'KotlinSharedAndroid'
         }
@@ -101,6 +97,4 @@ dependencies {
     androidTestImplementation "com.android.support.test.uiautomator:uiautomator-v18:$rootProject.uiAutomatorVersion"
     androidTestImplementation "com.linkedin.dexmaker:dexmaker-mockito:$rootProject.dexMakerVersion"
     androidTestImplementation "com.linkedin.testbutler:test-butler-library:$rootProject.testButlerVersion"
-
-    //kapt "com.android.databinding:compiler:$rootProject.databindingCompilerVersion"
 }
