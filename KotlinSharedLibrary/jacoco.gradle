@@ -1,6 +1,6 @@
 apply plugin: "com.vanniktech.android.junit.jacoco"
 
-def filesToExclude = ['**/*Interfaces*.*', '**/*BuildConfig*.*']
+def filesToExclude = ['**/*Interfaces*.*', '**/*BuildConfig*.*', '**/*Creator*.*']
 
 junitJacoco {
     jacocoVersion = '0.8.3' // type String
