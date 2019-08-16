@@ -4,14 +4,14 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
+    compileSdkVersion AppVersions.compileSdkVersion
+    buildToolsVersion AppVersions.buildToolsVersion
     defaultConfig {
-        applicationId rootProject.applicationId
-        minSdkVersion rootProject.minSdkVersion
-        targetSdkVersion rootProject.targetSdkVersion
-        versionCode rootProject.versionCode
-        versionName rootProject.versionName
+        applicationId AppVersions.applicationId
+        minSdkVersion AppVersions.minSdkVersion
+        targetSdkVersion AppVersions.targetSdkVersion
+        versionCode AppVersions.versionCode
+        versionName AppVersions.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -74,27 +74,27 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':KotlinSharedLibrary')
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation "com.android.support:appcompat-v7:$rootProject.androidSupportVersion"
-    implementation 'com.android.support:multidex:1.0.3'
-    implementation "com.android.support.test.espresso:espresso-idling-resource:$rootProject.espressoVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$PluginVersions.kotlinVersion"
+    implementation "com.android.support:appcompat-v7:$DependenciesVersions.androidSupportVersion"
+    implementation "com.android.support:multidex:$DependenciesVersions.multidexVersion"
+    implementation "com.android.support.test.espresso:espresso-idling-resource:$DependenciesVersions.espressoVersion"
 
     // for tests only
-    final mockito = "org.mockito:mockito-core:$rootProject.mockitoVersion"
+    final mockito = "org.mockito:mockito-core:$DependenciesVersions.mockitoVersion"
 
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "com.android.support.constraint:constraint-layout:$DependenciesVersions.constraintLayoutVersion"
     testImplementation mockito
-    testImplementation "junit:junit:$rootProject.jUnitVersion"
+    testImplementation "junit:junit:$DependenciesVersions.jUnitVersion"
 
     androidTestImplementation mockito
-    androidTestImplementation "com.android.support:support-annotations:$rootProject.androidSupportVersion"
-    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion"
-    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$rootProject.espressoVersion"
-    androidTestImplementation "com.android.support.test.espresso:espresso-intents:$rootProject.espressoVersion"
-    androidTestImplementation "com.android.support.test.espresso.idling:idling-concurrent:$rootProject.espressoVersion"
-    androidTestImplementation "com.android.support.test:rules:$rootProject.testRunnerVersion"
-    androidTestImplementation "com.android.support.test:runner:$rootProject.testRunnerVersion"
-    androidTestImplementation "com.android.support.test.uiautomator:uiautomator-v18:$rootProject.uiAutomatorVersion"
-    androidTestImplementation "com.linkedin.dexmaker:dexmaker-mockito:$rootProject.dexMakerVersion"
-    androidTestImplementation "com.linkedin.testbutler:test-butler-library:$rootProject.testButlerVersion"
+    androidTestImplementation "com.android.support:support-annotations:$DependenciesVersions.androidSupportVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$DependenciesVersions.espressoVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$DependenciesVersions.espressoVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-intents:$DependenciesVersions.espressoVersion"
+    androidTestImplementation "com.android.support.test.espresso.idling:idling-concurrent:$DependenciesVersions.espressoVersion"
+    androidTestImplementation "com.android.support.test:rules:$DependenciesVersions.testRunnerVersion"
+    androidTestImplementation "com.android.support.test:runner:$DependenciesVersions.testRunnerVersion"
+    androidTestImplementation "com.android.support.test.uiautomator:uiautomator-v18:$DependenciesVersions.uiAutomatorVersion"
+    androidTestImplementation "com.linkedin.dexmaker:dexmaker-mockito:$DependenciesVersions.dexMakerVersion"
+    androidTestImplementation "com.linkedin.testbutler:test-butler-library:$DependenciesVersions.testButlerVersion"
 }

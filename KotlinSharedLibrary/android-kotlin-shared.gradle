@@ -2,13 +2,13 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
+    compileSdkVersion AppVersions.compileSdkVersion
+    buildToolsVersion AppVersions.buildToolsVersion
     defaultConfig {
-        minSdkVersion rootProject.minSdkVersion
-        targetSdkVersion rootProject.targetSdkVersion
-        versionCode rootProject.versionCode
-        versionName rootProject.versionName
+        minSdkVersion AppVersions.minSdkVersion
+        targetSdkVersion AppVersions.targetSdkVersion
+        versionCode AppVersions.versionCode
+        versionName AppVersions.versionName
         multiDexEnabled true
     }
     buildTypes {

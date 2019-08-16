@@ -21,28 +21,28 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                api "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
+                api "org.jetbrains.kotlin:kotlin-stdlib-common:$PluginVersions.kotlinVersion"
             }
         }
 
         commonTest {
             dependencies {
-                implementation "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version"
-                implementation "org.jetbrains.kotlin:kotlin-test-annotations-common:$kotlin_version"
+                implementation "org.jetbrains.kotlin:kotlin-test-common:$PluginVersions.kotlinVersion"
+                implementation "org.jetbrains.kotlin:kotlin-test-annotations-common:$PluginVersions.kotlinVersion"
             }
         }
 
         androidMain {
             dependencies {
-                api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-                api "org.jetbrains.kotlin:kotlin-android-extensions-runtime:$kotlin_version"
+                api "org.jetbrains.kotlin:kotlin-stdlib:$PluginVersions.kotlinVersion"
+                api "org.jetbrains.kotlin:kotlin-android-extensions-runtime:$PluginVersions.kotlinVersion"
             }
         }
 
         androidTest {
             dependencies {
-                implementation "org.mockito:mockito-core:$rootProject.mockitoVersion"
-                implementation "junit:junit:$rootProject.jUnitVersion"
+                implementation "org.mockito:mockito-core:$DependenciesVersions.mockitoVersion"
+                implementation "junit:junit:$DependenciesVersions.jUnitVersion"
             }
         }
 
