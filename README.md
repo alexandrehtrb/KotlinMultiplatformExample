@@ -6,19 +6,11 @@ App exemplo de Kotlin Multiplataforma, com suporte no Android para as interfaces
 
 ## Ambiente de desenvolvimento para Android
 
-Android Studio 3.3 ou superior
-
-Link para download (Android Studio Canary):
-
-[Windows](https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-windows.zip)
-
-[Linux](https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-linux.zip)
-
-[Mac OS](https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-mac.zip)
+Android Studio 3.5 ou superior
 
 ## Ambiente de desenvolvimento para iOS
 
-XCode 10, Gradle 5.4.1, JDK 8 e Android SDK instalados, para gerar o `.framework` para o XCode e para desenvolver o app iOS.
+XCode 10, Gradle 5.5.1, JDK 8 e Android SDK instalados, para gerar o `.framework` para o XCode e para desenvolver o app iOS.
 
 ## Como funciona
 
@@ -40,6 +32,10 @@ Etapas:
 Para obter o relatório de cobertura de código por testes, execute a task do Gradle **:KotlinSharedLibrary:jacocoTestReportDebug**.
 
 O relatório deverá ser gerado na pasta `KotlinSharedLibrary\build\reports\jacoco\debug`.
+
+## Gradle KTS (Kotlin Script)
+
+O projeto foi atualizado para começar a usar Gradle KTS. Antes, apenas Gradle com Groovy era usado; basta ver versões de commits anteriores.
 
 ## Mais informações
 

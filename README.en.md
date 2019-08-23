@@ -6,19 +6,11 @@ Example app in Kotlin Multiplatform, with support to java.io.Serializable and an
 
 ## Tools required for Android
 
-Android Studio 3.3 or higher
-
-Download links for Android Studio Canary:
-
-[Windows](https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-windows.zip)
-
-[Linux](https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-linux.zip)
-
-[Mac OS](https://dl.google.com/dl/android/studio/ide-zips/3.5.0.7/android-studio-ide-191.5375575-mac.zip)
+Android Studio 3.5 or higher
 
 ## Tools required for iOS
 
-XCode 10, Gradle 5.4.1, JDK 8 and Android SDK installed, to generate the `.framework` for XCode and to develop the iOS app.
+XCode 10, Gradle 5.5.1, JDK 8 and Android SDK installed, to generate the `.framework` for XCode and to develop the iOS app.
 
 ## How it works
 
@@ -40,6 +32,10 @@ Steps:
 To obtain the code test coverage report, execute the Gradle task **:KotlinSharedLibrary:jacocoTestReportDebug**. 
 
 The report should be generated in the folder `KotlinSharedLibrary\build\reports\jacoco\debug`.
+
+## Gradle KTS (Kotlin Script)
+
+The project was updated to begin using Gradle KTS. Before, only Gradle with Groovy was used; those Gradle scripts can be seen in files from older commits.
 
 ## More information
 
