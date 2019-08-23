@@ -10,7 +10,7 @@ Android Studio 3.5 or higher
 
 ## Tools required for iOS
 
-XCode 10, Gradle 5.5.1, JDK 8 and Android SDK installed, to generate the `.framework` for XCode and to develop the iOS app.
+XCode 10, Gradle 5.5.1, JDK 7 and 8, and Android SDK installed, to generate the `.framework` for XCode and to develop the iOS app.
 
 ## How it works
 
