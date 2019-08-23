@@ -1,5 +1,5 @@
 object Plugins {
-    const val kotlinVersion = "1.3.40"
+    const val kotlinVersion = "1.3.41"
     const val jacocoVersion = "0.8.3"
 
     const val androidGradlePlugin = "com.android.tools.build:gradle:3.6.0-alpha06"
