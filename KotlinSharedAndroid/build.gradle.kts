@@ -8,10 +8,10 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:${PluginVersions.androidGradlePluginVersion}")
-        classpath("com.vanniktech:gradle-android-junit-jacoco-plugin:${PluginVersions.androidJacocoPluginVersion}")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${PluginVersions.kotlinVersion}")
-        classpath("org.jetbrains.kotlin:kotlin-native-gradle-plugin:${PluginVersions.kotlinVersion}")
+        classpath(Plugins.androidGradlePlugin)
+        classpath(Plugins.androidJacocoPlugin)
+        classpath(Plugins.kotlinGradlePlugin)
+        classpath(Plugins.kotlinNativeGradlePlugin)
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
