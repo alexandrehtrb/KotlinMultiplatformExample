@@ -4,6 +4,6 @@ object Plugins {
 
     const val androidGradlePlugin = "com.android.tools.build:gradle:3.6.0-alpha04"
     const val androidJacocoPlugin = "com.vanniktech:gradle-android-junit-jacoco-plugin:0.15.0"
-    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}"
-    const val kotlinNativeGradlePlugin = "org.jetbrains.kotlin:kotlin-native-gradle-plugin:${kotlinVersion}"
+    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    const val kotlinNativeGradlePlugin = "org.jetbrains.kotlin:kotlin-native-gradle-plugin:$kotlinVersion"
 }
