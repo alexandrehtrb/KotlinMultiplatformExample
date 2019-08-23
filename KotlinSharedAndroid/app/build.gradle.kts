@@ -68,10 +68,11 @@ dependencies {
     implementation(project(":KotlinSharedLibrary"))
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${PluginVersions.kotlinVersion}")
-    implementation("com.android.support:appcompat-v7:${DependenciesVersions.androidSupportVersion}")
-    implementation("com.android.support:multidex:${DependenciesVersions.multidexVersion}")
-    implementation("com.android.support.test.espresso:espresso-idling-resource:${DependenciesVersions.espressoVersion}")
-    implementation("com.android.support.constraint:constraint-layout:${DependenciesVersions.constraintLayoutVersion}")
+    implementation("androidx.appcompat:appcompat:${DependenciesVersions.appCompatVersion}")
+    implementation("androidx.multidex:multidex:${DependenciesVersions.multidexVersion}")
+    implementation("androidx.test.espresso:espresso-idling-resource:${DependenciesVersions.espressoVersion}")
+    implementation("androidx.constraintlayout:constraintlayout:${DependenciesVersions.constraintLayoutVersion}")
+
 
     // for tests only
     val mockito = "org.mockito:mockito-core:${DependenciesVersions.mockitoVersion}"
@@ -80,14 +81,14 @@ dependencies {
     testImplementation("junit:junit:${DependenciesVersions.jUnitVersion}")
 
     androidTestImplementation(mockito)
-    androidTestImplementation("com.android.support:support-annotations:${DependenciesVersions.androidSupportVersion}")
-    androidTestImplementation("com.android.support.test.espresso:espresso-core:${DependenciesVersions.espressoVersion}")
-    androidTestImplementation("com.android.support.test.espresso:espresso-contrib:${DependenciesVersions.espressoVersion}")
-    androidTestImplementation("com.android.support.test.espresso:espresso-intents:${DependenciesVersions.espressoVersion}")
-    androidTestImplementation("com.android.support.test.espresso.idling:idling-concurrent:${DependenciesVersions.espressoVersion}")
-    androidTestImplementation("com.android.support.test:rules:${DependenciesVersions.testRunnerVersion}")
-    androidTestImplementation("com.android.support.test:runner:${DependenciesVersions.testRunnerVersion}")
-    androidTestImplementation("com.android.support.test.uiautomator:uiautomator-v18:${DependenciesVersions.uiAutomatorVersion}")
+    androidTestImplementation("androidx.annotation:annotation:${DependenciesVersions.annotationVersion}")
+    androidTestImplementation("androidx.test.espresso:espresso-core:${DependenciesVersions.espressoVersion}")
+    androidTestImplementation("androidx.test.espresso:espresso-contrib:${DependenciesVersions.espressoVersion}")
+    androidTestImplementation("androidx.test.espresso:espresso-intents:${DependenciesVersions.espressoVersion}")
+    androidTestImplementation("androidx.test.espresso.idling:idling-concurrent:${DependenciesVersions.espressoVersion}")
+    androidTestImplementation("androidx.test:rules:${DependenciesVersions.testRunnerVersion}")
+    androidTestImplementation("androidx.test:runner:${DependenciesVersions.testRunnerVersion}")
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:${DependenciesVersions.uiAutomatorVersion}")
     androidTestImplementation("com.linkedin.dexmaker:dexmaker-mockito:${DependenciesVersions.dexMakerVersion}")
     androidTestImplementation("com.linkedin.testbutler:test-butler-library:${DependenciesVersions.testButlerVersion}")
 }

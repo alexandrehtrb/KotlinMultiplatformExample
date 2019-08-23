@@ -1,9 +1,10 @@
 package br.alexandrehtrb.kotlinsharedandroid;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import br.alexandrehtrb.kotlinsharedlibrary.Person;
 
