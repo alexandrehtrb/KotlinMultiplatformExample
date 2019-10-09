@@ -73,11 +73,7 @@ dependencies {
     implementation(AndroidDependencies.espressoIdlingResource)
     implementation(AndroidDependencies.constraintLayout)
 
-
-    // for tests only
-    val mockito = AndroidDependencies.mockito
-
-    testImplementation(mockito)
+    testImplementation(AndroidDependencies.mockito)
     testImplementation(AndroidDependencies.jUnit)
 
     androidTestImplementation(AndroidDependencies.mockito)

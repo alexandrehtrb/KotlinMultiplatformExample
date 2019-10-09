@@ -8,5 +8,5 @@ object AppVersions {
     const val targetSdkVersion = 29
     const val compileSdkVersion = 29
 
-    const val testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+    const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 }
